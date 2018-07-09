@@ -1,0 +1,58 @@
+enabled visible color blue primary textual region Main
+  size 380 250
+  at 100 100
+  system menu
+  color white foreground
+  title bar "Fred"
+  font "large"
+  minimize button
+  maximize button
+  red border
+
+integer A is 20
+        B is 10
+
+string Test is "this is all in lower case"
+
+function Add(integer:X, integer:Y)
+  returns integer
+  library "eslsamp"
+
+function Sub(integer:X, integer:Y)
+  returns integer
+  library "eslsamp"
+
+function Mul(integer:X, integer:Y)
+  returns integer
+  library "eslsamp"
+
+function Div(integer:X, integer:Y)
+  returns integer
+  library "eslsamp"
+
+function HelloWorld()
+  returns string
+  library "eslsamp"
+
+subroutine ToUpper(string: Buffer)
+  library "eslsamp"
+
+response to start
+  add to Main
+    insert "Ready!\n"
+
+response to Main
+  on button1 double click
+    add to Main
+      insert A "+" B "=" Add(A, B) "\n"
+      insert A "-" B "=" Sub(A, B) "\n"
+      insert A "*" B "=" Mul(A, B) "\n"
+      insert A "/" B "=" Div(A, B) "\n"
+      insert HelloWorld() "\n"
+   add to Main
+     insert "Before: " Test "\n"
+   call ToUpper(Test)
+   add to Main
+     insert "After: " Test "\n"
+
+

@@ -1,0 +1,28 @@
+# IBM Developer's Workframe/2 Make File Creation run at 13:31:51 on 08/12/92
+
+# Make File Creation run in directory:
+#   K:\SRC\ESLLIB;
+
+.SUFFIXES:
+
+.SUFFIXES: .c
+
+eslsamp.dll:  \
+  ESLSAMP.OBJ \
+  eslsamp.def \
+  MAKEFILE
+   @REM @<<ESLSAMP.@0
+     /CO /M /NOI +
+     ESLSAMP.OBJ
+     eslsamp.dll
+     eslsamp.map
+     
+     eslsamp.def;
+<<
+   LINK386.EXE @ESLSAMP.@0
+  IMPLIB eslsamp.LIB eslsamp.def
+
+{.}.c.obj:
+   ICC.EXE /Ss /Ti /Ge- /C .\$*.c
+
+!include MAKEFILE.DEP

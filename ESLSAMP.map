@@ -1,0 +1,287 @@
+
+ eslsamp
+
+ Start         Length     Name                   Class
+ 0001:00000000 000002CE8H CODE32                 CODE 32-bit
+ 0002:00000000 00000003FH SEG16T_MESSAGEBOX      CODE 16-bit
+ 0002:00000040 000000019H CODE16                 CODE 16-bit
+ 0003:00000000 000000030H _MSGSEG32              CODE 32-bit
+ 0004:00000000 000000008H LIBDATA16              DATA16 16-bit
+ 0005:00000000 00000078CH DATA32                 DATA 32-bit
+ 0005:0000078C 000000204H CONST32                CONST 32-bit
+ 0005:00000990 00000000CH EDC1                   EDC_CLASS 32-bit
+ 0005:0000099C 000000114H EDC2                   EDC_CLASS 32-bit
+ 0005:00000AB0 000000004H EDC3                   EDC_CLASS 32-bit
+ 0005:00000AB4 000000000H BSS32                  BSS 32-bit
+ 0005:00000AB4 0000000B4H c_common               BSS 32-bit
+
+ Origin   Group
+ 0005:0   DGROUP
+ 0000:0   FLAT
+
+ Address       Export                  Alias
+
+ 0002:00000009 ADD                     ADD
+ 0002:00000024 DIV                     DIV
+ 0002:0000002D HELLOWORLD              HELLOWORLD
+ 0002:00000000 MESSAGEBOX              MESSAGEBOX
+ 0002:00000012 MUL                     MUL
+ 0002:0000001B SUB                     SUB
+ 0002:00000036 TOUPPER                 TOUPPER
+
+  Address         Publics by Name
+
+ 0005:00000AE8       @BSSEDCINIT.C
+ 0005:00000AB8       @BSSN_EXCEPT.C
+ 0005:00000B58       @BSSPRTEMSG.C
+ 0002:00000009       ADD
+ 0002:00000024       DIV
+ 0000:00000000  Imp  DOS32FLATTOSEL       (DOSCALLS.425)
+ 0003:00000012       DOS32GETMESSAGE
+ 0003:00000012       Dos32GetMessage
+ 0000:00000000  Imp  DOS32IQUERYMESSAGECP (MSG.8)
+ 0000:00000000  Imp  DOS32SELTOFLAT       (DOSCALLS.426)
+ 0000:00000000  Imp  DOS32TRUEGETMESSAGE  (MSG.6)
+ 0000:00000000  Imp  DosAllocMem          (DOSCALLS.299)
+ 0000:00000000  Imp  DosCreateMutexSem    (DOSCALLS.331)
+ 0000:00000000  Imp  DosExit              (DOSCALLS.234)
+ 0000:00000000  Imp  DOSFLATTOSEL         (DOSCALLS.425)
+ 0000:00000000  Imp  DosFreeMem           (DOSCALLS.304)
+ 0000:00000000  Imp  DosGetInfoBlocks     (DOSCALLS.312)
+ 0003:00000012       DOSGETMESSAGE
+ 0003:00000012       DosGetMessage
+ 0000:00000000  Imp  DosQueryDBCSEnv      (NLS.6)
+ 0000:00000000  Imp  DosQueryHType        (DOSCALLS.224)
+ 0000:00000000  Imp  DosQuerySysInfo      (DOSCALLS.348)
+ 0000:00000000  Imp  DosRaiseException    (DOSCALLS.356)
+ 0000:00000000  Imp  DosReleaseMutexSem   (DOSCALLS.335)
+ 0000:00000000  Imp  DosRequestMutexSem   (DOSCALLS.334)
+ 0000:00000000  Imp  DosSetFilePtr        (DOSCALLS.256)
+ 0000:00000000  Imp  DosSetSignalExceptionFocus (DOSCALLS.378)
+ 0000:00000000  Imp  DosWrite             (DOSCALLS.282)
+ 0005:00000B00       errno
+ 0000:00000000  Imp  ESLCREATESTRING      (Esllib.ESLCREATESTRING)
+ 0000:00000000  Imp  ESLQUERYSTRINGADDR   (Esllib.ESLQUERYSTRINGADDR)
+ 0000:00000000  Imp  ESLQUERYSTRINGCHARS  (Esllib.ESLQUERYSTRINGCHARS)
+ 0000:00000000  Imp  ESLSETSTRINGVALUE    (Esllib.ESLSETSTRINGVALUE)
+ 0001:00001D54       fflush
+ 0001:00001DE4       free
+ 0001:00001F54       getenv
+ 0002:0000002D       HELLOWORLD
+ 0001:00002410       malloc
+ 0002:00000000       MESSAGEBOX
+ 0002:00000012       MUL
+ 0003:00000000       sig32
+ 0005:000001A8       stderr
+ 0005:000001A0       stdin
+ 0005:000001A4       stdout
+ 0001:00000570       strlen
+ 0001:00002704       strspn
+ 0001:00000594       strupr
+ 0002:0000001B       SUB
+ 0002:00000036       TOUPPER
+ 0000:00000000  Imp  WinMessageBox        (PMWIN.789)
+ 0005:00000ACC       _Async_exception_flag
+ 0001:00001D08       _bit_test_set
+ 0005:00000AC8       _broken_time_ptr
+ 0001:00001A64       _callback_opt_sys
+ 0001:00001118       _critlib_except
+ 0001:00001454       _CRT_init
+ 0001:000018E0       _CRT_term
+ 0005:000001B0       _ctable
+ 0005:00000AD8       _ctype
+ 0005:00000ADC       _cvt_buf_ptr
+ 0005:000002B4       _daylight
+ 0005:00000034       _dllentry
+ 0001:0000141C       _DLL_InitTerm
+ 0005:00000B5C       _doserrno
+ 0001:00000568       _DosFlatToSel
+ 0001:00000560       _DosSelToFlat
+ 0005:00000AFC       _dttm_ptr
+ 0005:00000AB4       _edata
+ 0001:00001D1C       _edcGetMessage
+ 0005:00000B68       _end
+ 0005:00000AB4       _environ
+ 0001:00001A40       _Exception
+ 0001:00000684       _exception_dllinit
+ 0001:00000650       _exception_procinit
+ 0001:00001330       _EXE_Exception
+ 0001:00001D40       _fcloseall_weak
+ 0005:00000990       _firsteib
+ 0005:00000B64       _flags
+ 0001:00002740       _Flush
+ 0001:00002900       _flushb
+ 0001:00001E8C       _FreeFCB
+ 0001:00001A7C       _get_seglim
+ 0001:0000213C       _heapmin
+ 0001:000028F8       _ilog2
+ 0005:00000B60       _internal_buf_ptr
+ 0005:00000AB0       _lasteib
+ 0005:00000AF8       _lcvt_buf_ptr
+ 0001:00000FB0       _Lib_excpt
+ 0001:00001994       _ltoa
+ 0001:00001A2C       _matherr
+ 0005:00000038       _matherr_ptr
+ 0001:000018CC       _Math_Exception_Def
+ 0001:00001AB8       _MesgServ
+ 0001:000005E4       _mig_eib_store
+ 0005:00000AD4       _osmajor
+ 0005:00000AE4       _osminor
+ 0005:000002BC       _osmode
+ 0005:00000B04       _pBucketArr
+ 0005:00000B50       _perror_msg_ptr
+ 0005:000001AC       _PGLOBAL_PTR
+ 0001:00001C88       _PrintErrMsg
+ 0005:000002C4       _random_seed
+ 0001:0000122C       _recreate_exception
+ 0001:00001A70       _Regen_exception
+ 0005:00000AE0       _Saved_Return_Address
+ 0001:00002620       _setupenv
+ 0001:00002320       _split_chunk
+ 0005:00000B54       _strerror_msg_ptr
+ 0005:00000B44       _strtok_pos
+ 0005:00000AD0       _tempname_ptr
+ 0001:00001CE8       _terminate
+ 0001:00001A58       _Test_and_reset
+ 0001:00001870       _test_handle
+ 0005:000002B8       _timezone
+ 0005:00000B48       _tzname
+ 0005:000002C0       _version
+ 0001:00001CE0       _w_raise
+ 0001:0000045C       __EDC3216
+ 0001:000004F4       __EDCThunkProlog
+ 0001:000006B4       __Exception
+ 0004:00000000       __fac
+
+  Address         Publics by Value
+
+ 0000:00000000  Imp  WinMessageBox        (PMWIN.789)
+ 0000:00000000  Imp  DOS32SELTOFLAT       (DOSCALLS.426)
+ 0000:00000000  Imp  DosQuerySysInfo      (DOSCALLS.348)
+ 0000:00000000  Imp  DosSetSignalExceptionFocus (DOSCALLS.378)
+ 0000:00000000  Imp  DOSFLATTOSEL         (DOSCALLS.425)
+ 0000:00000000  Imp  ESLQUERYSTRINGCHARS  (Esllib.ESLQUERYSTRINGCHARS)
+ 0000:00000000  Imp  DosCreateMutexSem    (DOSCALLS.331)
+ 0000:00000000  Imp  DOS32FLATTOSEL       (DOSCALLS.425)
+ 0000:00000000  Imp  DosQueryDBCSEnv      (NLS.6)
+ 0000:00000000  Imp  DosSetFilePtr        (DOSCALLS.256)
+ 0000:00000000  Imp  DosFreeMem           (DOSCALLS.304)
+ 0000:00000000  Imp  DosRequestMutexSem   (DOSCALLS.334)
+ 0000:00000000  Imp  ESLSETSTRINGVALUE    (Esllib.ESLSETSTRINGVALUE)
+ 0000:00000000  Imp  DosRaiseException    (DOSCALLS.356)
+ 0000:00000000  Imp  ESLCREATESTRING      (Esllib.ESLCREATESTRING)
+ 0000:00000000  Imp  DosQueryHType        (DOSCALLS.224)
+ 0000:00000000  Imp  DosAllocMem          (DOSCALLS.299)
+ 0000:00000000  Imp  DosGetInfoBlocks     (DOSCALLS.312)
+ 0000:00000000  Imp  DosExit              (DOSCALLS.234)
+ 0000:00000000  Imp  DOS32TRUEGETMESSAGE  (MSG.6)
+ 0000:00000000  Imp  DosWrite             (DOSCALLS.282)
+ 0000:00000000  Imp  DOS32IQUERYMESSAGECP (MSG.8)
+ 0000:00000000  Imp  DosReleaseMutexSem   (DOSCALLS.335)
+ 0000:00000000  Imp  ESLQUERYSTRINGADDR   (Esllib.ESLQUERYSTRINGADDR)
+ 0001:0000045C       __EDC3216
+ 0001:000004F4       __EDCThunkProlog
+ 0001:00000560       _DosSelToFlat
+ 0001:00000568       _DosFlatToSel
+ 0001:00000570       strlen
+ 0001:00000594       strupr
+ 0001:000005E4       _mig_eib_store
+ 0001:00000650       _exception_procinit
+ 0001:00000684       _exception_dllinit
+ 0001:000006B4       __Exception
+ 0001:00000FB0       _Lib_excpt
+ 0001:00001118       _critlib_except
+ 0001:0000122C       _recreate_exception
+ 0001:00001330       _EXE_Exception
+ 0001:0000141C       _DLL_InitTerm
+ 0001:00001454       _CRT_init
+ 0001:00001870       _test_handle
+ 0001:000018CC       _Math_Exception_Def
+ 0001:000018E0       _CRT_term
+ 0001:00001994       _ltoa
+ 0001:00001A2C       _matherr
+ 0001:00001A40       _Exception
+ 0001:00001A58       _Test_and_reset
+ 0001:00001A64       _callback_opt_sys
+ 0001:00001A70       _Regen_exception
+ 0001:00001A7C       _get_seglim
+ 0001:00001AB8       _MesgServ
+ 0001:00001C88       _PrintErrMsg
+ 0001:00001CE0       _w_raise
+ 0001:00001CE8       _terminate
+ 0001:00001D08       _bit_test_set
+ 0001:00001D1C       _edcGetMessage
+ 0001:00001D40       _fcloseall_weak
+ 0001:00001D54       fflush
+ 0001:00001DE4       free
+ 0001:00001E8C       _FreeFCB
+ 0001:00001F54       getenv
+ 0001:0000213C       _heapmin
+ 0001:00002320       _split_chunk
+ 0001:00002410       malloc
+ 0001:00002620       _setupenv
+ 0001:00002704       strspn
+ 0001:00002740       _Flush
+ 0001:000028F8       _ilog2
+ 0001:00002900       _flushb
+ 0002:00000000       MESSAGEBOX
+ 0002:00000009       ADD
+ 0002:00000012       MUL
+ 0002:0000001B       SUB
+ 0002:00000024       DIV
+ 0002:0000002D       HELLOWORLD
+ 0002:00000036       TOUPPER
+ 0003:00000000       sig32
+ 0003:00000012       DOS32GETMESSAGE
+ 0003:00000012       Dos32GetMessage
+ 0003:00000012       DosGetMessage
+ 0003:00000012       DOSGETMESSAGE
+ 0004:00000000       __fac
+ 0005:00000034       _dllentry
+ 0005:00000038       _matherr_ptr
+ 0005:000001A0       stdin
+ 0005:000001A4       stdout
+ 0005:000001A8       stderr
+ 0005:000001AC       _PGLOBAL_PTR
+ 0005:000001B0       _ctable
+ 0005:000002B4       _daylight
+ 0005:000002B8       _timezone
+ 0005:000002BC       _osmode
+ 0005:000002C0       _version
+ 0005:000002C4       _random_seed
+ 0005:00000990       _firsteib
+ 0005:00000AB0       _lasteib
+ 0005:00000AB4       _edata
+ 0005:00000AB4       _environ
+ 0005:00000AB8       @BSSN_EXCEPT.C
+ 0005:00000AC8       _broken_time_ptr
+ 0005:00000ACC       _Async_exception_flag
+ 0005:00000AD0       _tempname_ptr
+ 0005:00000AD4       _osmajor
+ 0005:00000AD8       _ctype
+ 0005:00000ADC       _cvt_buf_ptr
+ 0005:00000AE0       _Saved_Return_Address
+ 0005:00000AE4       _osminor
+ 0005:00000AE8       @BSSEDCINIT.C
+ 0005:00000AF8       _lcvt_buf_ptr
+ 0005:00000AFC       _dttm_ptr
+ 0005:00000B00       errno
+ 0005:00000B04       _pBucketArr
+ 0005:00000B44       _strtok_pos
+ 0005:00000B48       _tzname
+ 0005:00000B50       _perror_msg_ptr
+ 0005:00000B54       _strerror_msg_ptr
+ 0005:00000B58       @BSSPRTEMSG.C
+ 0005:00000B5C       _doserrno
+ 0005:00000B60       _internal_buf_ptr
+ 0005:00000B64       _flags
+ 0005:00000B68       _end
+ESLSAMP.OBJ(K:\src\esllib\ESLSAMP.C) : warning L4008: aliased fix-up to non-alias object near 2 in object SEG16T_MESSAGEBOX
+ESLSAMP.OBJ(K:\src\esllib\ESLSAMP.C) : warning L4008: aliased fix-up to non-alias object near B in object SEG16T_MESSAGEBOX
+ESLSAMP.OBJ(K:\src\esllib\ESLSAMP.C) : warning L4008: aliased fix-up to non-alias object near 14 in object SEG16T_MESSAGEBOX
+ESLSAMP.OBJ(K:\src\esllib\ESLSAMP.C) : warning L4008: aliased fix-up to non-alias object near 1D in object SEG16T_MESSAGEBOX
+ESLSAMP.OBJ(K:\src\esllib\ESLSAMP.C) : warning L4008: aliased fix-up to non-alias object near 26 in object SEG16T_MESSAGEBOX
+ESLSAMP.OBJ(K:\src\esllib\ESLSAMP.C) : warning L4008: aliased fix-up to non-alias object near 2F in object SEG16T_MESSAGEBOX
+ESLSAMP.OBJ(K:\src\esllib\ESLSAMP.C) : warning L4008: aliased fix-up to non-alias object near 38 in object SEG16T_MESSAGEBOX
+
+Program entry point at 0001:141C

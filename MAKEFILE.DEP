@@ -1,0 +1,19 @@
+# IBM Developer's Workframe/2 Make File Creation run at 13:31:51 on 08/12/92
+
+# Make File Creation run in directory:
+#   K:\SRC\ESLLIB;
+
+# Assumed INCLUDE environment variable path:
+#   K:\SRC\ESLLIB;
+#   H:\MMOS2\MMTOOLKT\INC;
+#   H:\MMOS2\MMTOOLKT\H;
+#   I:\TOOLKT20\C\OS2H;
+#   I:\TOOLKT20\ASM\OS2INC;
+#   J:\IBMC\INCLUDE;
+#   I:\X11R5\MIT\INCLUDE;
+
+
+ESLSAMP.OBJ:  ESLSAMP.C  \
+#  {$(INCLUDE);}os2.h  \
+   {.;$(INCLUDE);}esllib.h  \
+   MAKEFILE
